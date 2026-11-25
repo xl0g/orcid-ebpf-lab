@@ -1,0 +1,16 @@
+{"variant": "v01_cat_curlpy", "style": "naive", "t_start_ns": 1078784753074, "t_end_ns": 1078875747990}
+{"variant": "v02_awk_devtcp", "style": "naive", "t_start_ns": 1079477617532, "t_end_ns": 1079484857199}
+{"variant": "v03_perl_socket", "style": "naive", "t_start_ns": 1080087913366, "t_end_ns": 1080136183074}
+{"variant": "v04_base64_chunks", "style": "naive", "t_start_ns": 1080741060616, "t_end_ns": 1080872708158}
+{"variant": "v05_tar_pipe", "style": "naive", "t_start_ns": 1081479927825, "t_end_ns": 1081553956825}
+{"variant": "v06_find_exec", "style": "naive", "t_start_ns": 1082155809617, "t_end_ns": 1082216837117}
+{"variant": "v07_od_hex", "style": "naive", "t_start_ns": 1082817247867, "t_end_ns": 1082879591450}
+{"variant": "v08_py_requests", "style": "naive", "t_start_ns": 1083483680284, "t_end_ns": 1083511229909}
+{"variant": "v09_py_gzip", "style": "naive", "t_start_ns": 1084115719576, "t_end_ns": 1084132621951}
+{"variant": "v10_dd_nc", "style": "naive", "t_start_ns": 1084733317659, "t_end_ns": 1084761698534}
+{"variant": "v11_mim_open", "style": "mimicry", "t_start_ns": 1085362355076, "t_end_ns": 1085366763993}
+{"variant": "v12_mim_pathlib", "style": "mimicry", "t_start_ns": 1085967784702, "t_end_ns": 1085990585618}
+{"variant": "v13_mim_readlines", "style": "mimicry", "t_start_ns": 1086595942369, "t_end_ns": 1086603631660}
+{"variant": "v14_mim_fileinput", "style": "mimicry", "t_start_ns": 1087205533202, "t_end_ns": 1087212750619}
+{"variant": "v15_mim_harvest", "style": "mimicry", "t_start_ns": 1087813524244, "t_end_ns": 1087825313328}
+{"variant": "v16_mim_osread", "style": "mimicry", "t_start_ns": 1088430121745, "t_end_ns": 1088439243495}

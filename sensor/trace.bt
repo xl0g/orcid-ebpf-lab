@@ -1,0 +1,17 @@
+// OrcID observation sensor: process lineage, exec, file opens and outbound connects, tagged with cgroup id (workload identity).
+tracepoint:sched:sched_process_fork /cgroup != 1/ {
+  printf("F\t%llu\t%llu\t%d\t%d\t%s\n", nsecs, cgroup, args.child_pid, args.parent_pid, args.parent_comm);
+}
+tracepoint:syscalls:sys_enter_execve /cgroup != 1/ {
+  printf("X\t%llu\t%llu\t%d\t%s\t%s\n", nsecs, cgroup, pid, comm, str(args.filename));
+}
+tracepoint:syscalls:sys_enter_openat /cgroup != 1/ {
+  printf("O\t%llu\t%llu\t%d\t%s\t%d\t%s\n", nsecs, cgroup, pid, comm, args.flags, str(args.filename));
+}
+tracepoint:syscalls:sys_enter_connect /cgroup != 1/ {
+  $sa = (struct sockaddr_in *)args.uservaddr;
+  if ($sa->sin_family == 2) {
+    $p = $sa->sin_port;
+    printf("C\t%llu\t%llu\t%d\t%s\t%d\t%s\n", nsecs, cgroup, pid, comm, (($p & 0xff) << 8) | ($p >> 8), ntop(2, $sa->sin_addr.s_addr));
+  }
+}

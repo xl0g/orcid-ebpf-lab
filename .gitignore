@@ -1,0 +1,15 @@
+# Large raw captures (regenerable); may embed fake-secret paths / host noise
+results/**/events.tsv
+results/**/received.jsonl
+results/**/ev.json
+results/**/*.err
+results/**/sensor.err
+results/**/b.err
+# downloaded third-party dataset (ADFA-LD) is NOT redistributed here
+adfa/
+*.zip
+# os cruft
+.DS_Store
+sensor/*.bak
+run_experiment.sh.bak
+run_experiment.sh.v1

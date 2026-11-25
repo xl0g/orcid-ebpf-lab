@@ -1,0 +1,3 @@
+{"http_db_workload":{"sensor_off_mean_ms":0.88,"sensor_on_mean_ms":0.88,"p99_off_ms":1.46,"p99_on_ms":1.45,"note":"within noise, <5%"},
+ "openat_microbench":{"off_ns_per_syscall":943,"on_ns_per_syscall":1171,"added_ns":228,"pct":24.2},
+ "enforcement":{"mechanism":"bpf_override_return on connect for victim cgroup","benign_endpoint":"unaffected","attacker_outbound":"blocked synchronously (EPERM in-kernel)"}}

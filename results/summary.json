@@ -1,0 +1,64 @@
+{
+  "attack_runs": [
+    "att_7",
+    "att_11",
+    "att_23"
+  ],
+  "variants_each": 40,
+  "detection_rate_mean_std": {
+    "D0": [
+      0.983,
+      0.012
+    ],
+    "D1": [
+      1.0,
+      0.0
+    ],
+    "D2": [
+      1.0,
+      0.0
+    ]
+  },
+  "backup_fp_per_min_attackrun": {
+    "D0": [
+      22.19,
+      0.209
+    ],
+    "D1": [
+      22.19,
+      0.209
+    ],
+    "D2": [
+      0.0,
+      0.0
+    ]
+  },
+  "median_ttd_ms": {
+    "D0": 341.2,
+    "D1": 425.7,
+    "D2": 249.1
+  },
+  "control_fp": {
+    "D0": {
+      "victim_fp": 0,
+      "backup_fp": 42,
+      "fp_per_min": 19.52
+    },
+    "D1": {
+      "victim_fp": 0,
+      "backup_fp": 42,
+      "fp_per_min": 19.52
+    },
+    "D2": {
+      "victim_fp": 0,
+      "backup_fp": 0,
+      "fp_per_min": 0.0
+    }
+  },
+  "control_minutes": 2.2,
+  "d2_missed_variants_per_seed": [
+    [],
+    [],
+    []
+  ]
+}

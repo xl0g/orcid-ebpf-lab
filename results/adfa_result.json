@@ -1,0 +1,11 @@
+{
+  "N": 5,
+  "db_grams": 43560,
+  "auc": 0.782,
+  "det_at_5fp": 0.244,
+  "det_at_10fp": 0.437,
+  "det_at_20fp": 0.716,
+  "n_train": 833,
+  "n_val": 4372,
+  "n_attack": 746
+}

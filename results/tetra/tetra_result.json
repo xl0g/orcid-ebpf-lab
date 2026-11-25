@@ -1,0 +1,7 @@
+{
+  "backup_fp_per_min": 23.6,
+  "victim_fp_per_min": 23.6,
+  "total_benign_fp_per_min": 47.1,
+  "attack_victim_alerts": 170,
+  "benign_min": 1.7
+}
